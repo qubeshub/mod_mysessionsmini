@@ -165,7 +165,7 @@ $base = rtrim(Request::base(true), '/');
 				echo '<p class="error">' . Lang::txt('MOD_MYSESSIONSMINI_ERROR_RETRIEVING_STORAGE') . '</p></div>';
 				return;
 			}
-			else if (isset($diskUsage['softspace']) && $diskUsage['softspace'] == 0)
+			elseif (isset($diskUsage['softspace']) && $diskUsage['softspace'] == 0)
 			{
 				echo '<p class="info">' . Lang::txt('MOD_MYSESSIONSMINI_NO_QUOTA') . '</p></div>';
 				return;
